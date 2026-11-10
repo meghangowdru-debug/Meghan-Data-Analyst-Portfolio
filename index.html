@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meghan Gowda B Y | Data Analyst Portfolio" />
+    <meta name="theme-color" content="#0B1220" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Meghan Gowda B Y | Data Analyst Portfolio" />
+    <meta property="og:description" content="Data Analyst portfolio featuring SQL, Python, Power BI, Excel, analytics projects and experience." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Meghan Gowda B Y | Data Analyst Portfolio" />
+    <meta name="twitter:description" content="Data Analyst portfolio featuring SQL, Python, Power BI, Excel, analytics projects and experience." />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <script>
+      (() => {
+        let theme;
+        try { theme = localStorage.getItem("portfolio-theme"); } catch {}
+        if (theme !== "light" && theme !== "dark") {
+          theme = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        }
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Meghan Gowda B Y | Data Analyst Portfolio</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="boot-screen" role="status" aria-live="polite">Loading portfolio…</div>
+    </div>
+    <noscript>This portfolio needs JavaScript enabled to display its interactive features.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

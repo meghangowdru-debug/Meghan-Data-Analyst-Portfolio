@@ -1,0 +1,25 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "./portfolio.css";
+
+@source "./**/*.{ts,tsx}";
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social-link svg,
+.project-arrow,
+.github-link svg,
+.publication-link svg {
+  width: 16px;
+  height: 16px;
+}
